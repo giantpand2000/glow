@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
+set -x
+shopt -s expand_aliases
+alias sed='gsed'
 mkdir -p generated
 curl https://raw.githubusercontent.com/KhronosGroup/OpenGL-Registry/01ac568838ce3a93385d885362e3ddc7bca54b08/xml/gl.xml > generated/gl.xml
 
 # phosphorus expects one API, but we're trying to generate bindings for multiple at once.
 # We'll work around it for now by renaming GL ES 3.2 to match GL 4.6.
-replacements=''
-replacements+='s/api="gles2"/api="gl"/g;'
-replacements+='s/name="GL_ES_VERSION_3_2"/name="GL_VERSION_4_6"/g;'
-replacements+='s/number="3.2"/number="4.6"/g;'
-sed --in-place $replacements generated/gl.xml
+# replacements=''
+# replacements+='s/api="gles2"/api="gl"/g;'
+# replacements+='s/name="GL_ES_VERSION_3_2"/name="GL_VERSION_4_6"/g;'
+# replacements+='s/number="3.2"/number="4.6"/g;'
+# sed --in-place $replacements generated/gl.xml
 
 gl_extensions=(
     GL_ARB_debug_output
@@ -42,10 +45,10 @@ gl_extensions=(
 )
 printf -v gl_extensions_comma_joined '%s,' "${gl_extensions[@]}"
 
-phosphorus \
+../phosphorus/target/release/phosphorus \
     ./generated/gl.xml \
     gl \
-    4 6 \
+    4 1 \
     core \
     "${gl_extensions_comma_joined%,}" \
     > generated/gl46.rs

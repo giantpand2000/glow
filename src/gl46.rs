@@ -4877,40 +4877,24 @@ pub mod struct_commands {
             self.AttachShader_load_with_dyn(get_proc_address);
             self.BeginConditionalRender_load_with_dyn(get_proc_address);
             self.BeginQuery_load_with_dyn(get_proc_address);
-            {
-                self.BeginQueryEXT_load_with_dyn(get_proc_address);
-            }
             self.BeginQueryIndexed_load_with_dyn(get_proc_address);
             self.BeginTransformFeedback_load_with_dyn(get_proc_address);
             self.BindAttribLocation_load_with_dyn(get_proc_address);
             self.BindBuffer_load_with_dyn(get_proc_address);
             self.BindBufferBase_load_with_dyn(get_proc_address);
             self.BindBufferRange_load_with_dyn(get_proc_address);
-            self.BindBuffersBase_load_with_dyn(get_proc_address);
-            self.BindBuffersRange_load_with_dyn(get_proc_address);
             self.BindFragDataLocation_load_with_dyn(get_proc_address);
             self.BindFragDataLocationIndexed_load_with_dyn(get_proc_address);
             self.BindFramebuffer_load_with_dyn(get_proc_address);
-            self.BindImageTexture_load_with_dyn(get_proc_address);
-            self.BindImageTextures_load_with_dyn(get_proc_address);
             self.BindProgramPipeline_load_with_dyn(get_proc_address);
             self.BindRenderbuffer_load_with_dyn(get_proc_address);
             self.BindSampler_load_with_dyn(get_proc_address);
-            self.BindSamplers_load_with_dyn(get_proc_address);
             self.BindTexture_load_with_dyn(get_proc_address);
-            self.BindTextureUnit_load_with_dyn(get_proc_address);
-            self.BindTextures_load_with_dyn(get_proc_address);
             self.BindTransformFeedback_load_with_dyn(get_proc_address);
             self.BindVertexArray_load_with_dyn(get_proc_address);
             {
                 self.BindVertexArrayAPPLE_load_with_dyn(get_proc_address);
             }
-            {
-                self.BindVertexArrayOES_load_with_dyn(get_proc_address);
-            }
-            self.BindVertexBuffer_load_with_dyn(get_proc_address);
-            self.BindVertexBuffers_load_with_dyn(get_proc_address);
-            self.BlendBarrier_load_with_dyn(get_proc_address);
             self.BlendColor_load_with_dyn(get_proc_address);
             self.BlendEquation_load_with_dyn(get_proc_address);
             self.BlendEquationSeparate_load_with_dyn(get_proc_address);
@@ -4921,19 +4905,11 @@ pub mod struct_commands {
             self.BlendFuncSeparatei_load_with_dyn(get_proc_address);
             self.BlendFunci_load_with_dyn(get_proc_address);
             self.BlitFramebuffer_load_with_dyn(get_proc_address);
-            self.BlitNamedFramebuffer_load_with_dyn(get_proc_address);
             self.BufferData_load_with_dyn(get_proc_address);
-            self.BufferStorage_load_with_dyn(get_proc_address);
-            {
-                self.BufferStorageEXT_load_with_dyn(get_proc_address);
-            }
             self.BufferSubData_load_with_dyn(get_proc_address);
             self.CheckFramebufferStatus_load_with_dyn(get_proc_address);
-            self.CheckNamedFramebufferStatus_load_with_dyn(get_proc_address);
             self.ClampColor_load_with_dyn(get_proc_address);
             self.Clear_load_with_dyn(get_proc_address);
-            self.ClearBufferData_load_with_dyn(get_proc_address);
-            self.ClearBufferSubData_load_with_dyn(get_proc_address);
             self.ClearBufferfi_load_with_dyn(get_proc_address);
             self.ClearBufferfv_load_with_dyn(get_proc_address);
             self.ClearBufferiv_load_with_dyn(get_proc_address);
@@ -4941,17 +4917,8 @@ pub mod struct_commands {
             self.ClearColor_load_with_dyn(get_proc_address);
             self.ClearDepth_load_with_dyn(get_proc_address);
             self.ClearDepthf_load_with_dyn(get_proc_address);
-            self.ClearNamedBufferData_load_with_dyn(get_proc_address);
-            self.ClearNamedBufferSubData_load_with_dyn(get_proc_address);
-            self.ClearNamedFramebufferfi_load_with_dyn(get_proc_address);
-            self.ClearNamedFramebufferfv_load_with_dyn(get_proc_address);
-            self.ClearNamedFramebufferiv_load_with_dyn(get_proc_address);
-            self.ClearNamedFramebufferuiv_load_with_dyn(get_proc_address);
             self.ClearStencil_load_with_dyn(get_proc_address);
-            self.ClearTexImage_load_with_dyn(get_proc_address);
-            self.ClearTexSubImage_load_with_dyn(get_proc_address);
             self.ClientWaitSync_load_with_dyn(get_proc_address);
-            self.ClipControl_load_with_dyn(get_proc_address);
             self.ColorMask_load_with_dyn(get_proc_address);
             {
                 self.ColorMaskIndexedEXT_load_with_dyn(get_proc_address);
@@ -4964,65 +4931,21 @@ pub mod struct_commands {
             self.CompressedTexSubImage1D_load_with_dyn(get_proc_address);
             self.CompressedTexSubImage2D_load_with_dyn(get_proc_address);
             self.CompressedTexSubImage3D_load_with_dyn(get_proc_address);
-            self.CompressedTextureSubImage1D_load_with_dyn(get_proc_address);
-            self.CompressedTextureSubImage2D_load_with_dyn(get_proc_address);
-            self.CompressedTextureSubImage3D_load_with_dyn(get_proc_address);
             self.CopyBufferSubData_load_with_dyn(get_proc_address);
-            {
-                self.CopyBufferSubDataNV_load_with_dyn(get_proc_address);
-            }
-            self.CopyImageSubData_load_with_dyn(get_proc_address);
-            self.CopyNamedBufferSubData_load_with_dyn(get_proc_address);
             self.CopyTexImage1D_load_with_dyn(get_proc_address);
             self.CopyTexImage2D_load_with_dyn(get_proc_address);
             self.CopyTexSubImage1D_load_with_dyn(get_proc_address);
             self.CopyTexSubImage2D_load_with_dyn(get_proc_address);
             self.CopyTexSubImage3D_load_with_dyn(get_proc_address);
-            self.CopyTextureSubImage1D_load_with_dyn(get_proc_address);
-            self.CopyTextureSubImage2D_load_with_dyn(get_proc_address);
-            self.CopyTextureSubImage3D_load_with_dyn(get_proc_address);
-            self.CreateBuffers_load_with_dyn(get_proc_address);
-            self.CreateFramebuffers_load_with_dyn(get_proc_address);
             self.CreateProgram_load_with_dyn(get_proc_address);
-            self.CreateProgramPipelines_load_with_dyn(get_proc_address);
-            self.CreateQueries_load_with_dyn(get_proc_address);
-            self.CreateRenderbuffers_load_with_dyn(get_proc_address);
-            self.CreateSamplers_load_with_dyn(get_proc_address);
             self.CreateShader_load_with_dyn(get_proc_address);
             self.CreateShaderProgramv_load_with_dyn(get_proc_address);
-            self.CreateTextures_load_with_dyn(get_proc_address);
-            self.CreateTransformFeedbacks_load_with_dyn(get_proc_address);
-            self.CreateVertexArrays_load_with_dyn(get_proc_address);
             self.CullFace_load_with_dyn(get_proc_address);
-            self.DebugMessageCallback_load_with_dyn(get_proc_address);
-            {
-                self.DebugMessageCallbackARB_load_with_dyn(get_proc_address);
-            }
-            {
-                self.DebugMessageCallbackKHR_load_with_dyn(get_proc_address);
-            }
-            self.DebugMessageControl_load_with_dyn(get_proc_address);
-            {
-                self.DebugMessageControlARB_load_with_dyn(get_proc_address);
-            }
-            {
-                self.DebugMessageControlKHR_load_with_dyn(get_proc_address);
-            }
-            self.DebugMessageInsert_load_with_dyn(get_proc_address);
-            {
-                self.DebugMessageInsertARB_load_with_dyn(get_proc_address);
-            }
-            {
-                self.DebugMessageInsertKHR_load_with_dyn(get_proc_address);
-            }
             self.DeleteBuffers_load_with_dyn(get_proc_address);
             self.DeleteFramebuffers_load_with_dyn(get_proc_address);
             self.DeleteProgram_load_with_dyn(get_proc_address);
             self.DeleteProgramPipelines_load_with_dyn(get_proc_address);
             self.DeleteQueries_load_with_dyn(get_proc_address);
-            {
-                self.DeleteQueriesEXT_load_with_dyn(get_proc_address);
-            }
             self.DeleteRenderbuffers_load_with_dyn(get_proc_address);
             self.DeleteSamplers_load_with_dyn(get_proc_address);
             self.DeleteShader_load_with_dyn(get_proc_address);
@@ -5032,9 +4955,6 @@ pub mod struct_commands {
             self.DeleteVertexArrays_load_with_dyn(get_proc_address);
             {
                 self.DeleteVertexArraysAPPLE_load_with_dyn(get_proc_address);
-            }
-            {
-                self.DeleteVertexArraysOES_load_with_dyn(get_proc_address);
             }
             self.DepthFunc_load_with_dyn(get_proc_address);
             self.DepthMask_load_with_dyn(get_proc_address);
@@ -5047,18 +4967,14 @@ pub mod struct_commands {
             {
                 self.DisableIndexedEXT_load_with_dyn(get_proc_address);
             }
-            self.DisableVertexArrayAttrib_load_with_dyn(get_proc_address);
             self.DisableVertexAttribArray_load_with_dyn(get_proc_address);
             self.Disablei_load_with_dyn(get_proc_address);
-            self.DispatchCompute_load_with_dyn(get_proc_address);
-            self.DispatchComputeIndirect_load_with_dyn(get_proc_address);
             self.DrawArrays_load_with_dyn(get_proc_address);
             self.DrawArraysIndirect_load_with_dyn(get_proc_address);
             self.DrawArraysInstanced_load_with_dyn(get_proc_address);
             {
                 self.DrawArraysInstancedARB_load_with_dyn(get_proc_address);
             }
-            self.DrawArraysInstancedBaseInstance_load_with_dyn(get_proc_address);
             self.DrawBuffer_load_with_dyn(get_proc_address);
             self.DrawBuffers_load_with_dyn(get_proc_address);
             self.DrawElements_load_with_dyn(get_proc_address);
@@ -5068,35 +4984,25 @@ pub mod struct_commands {
             {
                 self.DrawElementsInstancedARB_load_with_dyn(get_proc_address);
             }
-            self.DrawElementsInstancedBaseInstance_load_with_dyn(get_proc_address);
             self.DrawElementsInstancedBaseVertex_load_with_dyn(get_proc_address);
-            self.DrawElementsInstancedBaseVertexBaseInstance_load_with_dyn(get_proc_address);
             self.DrawRangeElements_load_with_dyn(get_proc_address);
             self.DrawRangeElementsBaseVertex_load_with_dyn(get_proc_address);
             self.DrawTransformFeedback_load_with_dyn(get_proc_address);
-            self.DrawTransformFeedbackInstanced_load_with_dyn(get_proc_address);
             self.DrawTransformFeedbackStream_load_with_dyn(get_proc_address);
-            self.DrawTransformFeedbackStreamInstanced_load_with_dyn(get_proc_address);
             self.Enable_load_with_dyn(get_proc_address);
             {
                 self.EnableIndexedEXT_load_with_dyn(get_proc_address);
             }
-            self.EnableVertexArrayAttrib_load_with_dyn(get_proc_address);
             self.EnableVertexAttribArray_load_with_dyn(get_proc_address);
             self.Enablei_load_with_dyn(get_proc_address);
             self.EndConditionalRender_load_with_dyn(get_proc_address);
             self.EndQuery_load_with_dyn(get_proc_address);
-            {
-                self.EndQueryEXT_load_with_dyn(get_proc_address);
-            }
             self.EndQueryIndexed_load_with_dyn(get_proc_address);
             self.EndTransformFeedback_load_with_dyn(get_proc_address);
             self.FenceSync_load_with_dyn(get_proc_address);
             self.Finish_load_with_dyn(get_proc_address);
             self.Flush_load_with_dyn(get_proc_address);
             self.FlushMappedBufferRange_load_with_dyn(get_proc_address);
-            self.FlushMappedNamedBufferRange_load_with_dyn(get_proc_address);
-            self.FramebufferParameteri_load_with_dyn(get_proc_address);
             self.FramebufferRenderbuffer_load_with_dyn(get_proc_address);
             self.FramebufferTexture_load_with_dyn(get_proc_address);
             self.FramebufferTexture1D_load_with_dyn(get_proc_address);
@@ -5108,9 +5014,6 @@ pub mod struct_commands {
             self.GenFramebuffers_load_with_dyn(get_proc_address);
             self.GenProgramPipelines_load_with_dyn(get_proc_address);
             self.GenQueries_load_with_dyn(get_proc_address);
-            {
-                self.GenQueriesEXT_load_with_dyn(get_proc_address);
-            }
             self.GenRenderbuffers_load_with_dyn(get_proc_address);
             self.GenSamplers_load_with_dyn(get_proc_address);
             self.GenTextures_load_with_dyn(get_proc_address);
@@ -5119,12 +5022,7 @@ pub mod struct_commands {
             {
                 self.GenVertexArraysAPPLE_load_with_dyn(get_proc_address);
             }
-            {
-                self.GenVertexArraysOES_load_with_dyn(get_proc_address);
-            }
             self.GenerateMipmap_load_with_dyn(get_proc_address);
-            self.GenerateTextureMipmap_load_with_dyn(get_proc_address);
-            self.GetActiveAtomicCounterBufferiv_load_with_dyn(get_proc_address);
             self.GetActiveAttrib_load_with_dyn(get_proc_address);
             self.GetActiveSubroutineName_load_with_dyn(get_proc_address);
             self.GetActiveSubroutineUniformName_load_with_dyn(get_proc_address);
@@ -5146,15 +5044,6 @@ pub mod struct_commands {
             self.GetBufferPointerv_load_with_dyn(get_proc_address);
             self.GetBufferSubData_load_with_dyn(get_proc_address);
             self.GetCompressedTexImage_load_with_dyn(get_proc_address);
-            self.GetCompressedTextureImage_load_with_dyn(get_proc_address);
-            self.GetCompressedTextureSubImage_load_with_dyn(get_proc_address);
-            self.GetDebugMessageLog_load_with_dyn(get_proc_address);
-            {
-                self.GetDebugMessageLogARB_load_with_dyn(get_proc_address);
-            }
-            {
-                self.GetDebugMessageLogKHR_load_with_dyn(get_proc_address);
-            }
             self.GetDoublei_v_load_with_dyn(get_proc_address);
             self.GetDoublev_load_with_dyn(get_proc_address);
             self.GetError_load_with_dyn(get_proc_address);
@@ -5163,77 +5052,34 @@ pub mod struct_commands {
             self.GetFragDataIndex_load_with_dyn(get_proc_address);
             self.GetFragDataLocation_load_with_dyn(get_proc_address);
             self.GetFramebufferAttachmentParameteriv_load_with_dyn(get_proc_address);
-            self.GetFramebufferParameteriv_load_with_dyn(get_proc_address);
-            self.GetGraphicsResetStatus_load_with_dyn(get_proc_address);
             self.GetInteger64i_v_load_with_dyn(get_proc_address);
             self.GetInteger64v_load_with_dyn(get_proc_address);
-            {
-                self.GetInteger64vEXT_load_with_dyn(get_proc_address);
-            }
             {
                 self.GetIntegerIndexedvEXT_load_with_dyn(get_proc_address);
             }
             self.GetIntegeri_v_load_with_dyn(get_proc_address);
             self.GetIntegerv_load_with_dyn(get_proc_address);
-            self.GetInternalformati64v_load_with_dyn(get_proc_address);
             self.GetInternalformativ_load_with_dyn(get_proc_address);
             self.GetMultisamplefv_load_with_dyn(get_proc_address);
-            self.GetNamedBufferParameteri64v_load_with_dyn(get_proc_address);
-            self.GetNamedBufferParameteriv_load_with_dyn(get_proc_address);
-            self.GetNamedBufferPointerv_load_with_dyn(get_proc_address);
-            self.GetNamedBufferSubData_load_with_dyn(get_proc_address);
-            self.GetNamedFramebufferAttachmentParameteriv_load_with_dyn(get_proc_address);
-            self.GetNamedFramebufferParameteriv_load_with_dyn(get_proc_address);
-            self.GetNamedRenderbufferParameteriv_load_with_dyn(get_proc_address);
-            self.GetObjectLabel_load_with_dyn(get_proc_address);
-            {
-                self.GetObjectLabelKHR_load_with_dyn(get_proc_address);
-            }
-            self.GetObjectPtrLabel_load_with_dyn(get_proc_address);
-            {
-                self.GetObjectPtrLabelKHR_load_with_dyn(get_proc_address);
-            }
             self.GetPointerv_load_with_dyn(get_proc_address);
-            {
-                self.GetPointervKHR_load_with_dyn(get_proc_address);
-            }
             self.GetProgramBinary_load_with_dyn(get_proc_address);
             self.GetProgramInfoLog_load_with_dyn(get_proc_address);
-            self.GetProgramInterfaceiv_load_with_dyn(get_proc_address);
             self.GetProgramPipelineInfoLog_load_with_dyn(get_proc_address);
             self.GetProgramPipelineiv_load_with_dyn(get_proc_address);
-            self.GetProgramResourceIndex_load_with_dyn(get_proc_address);
-            self.GetProgramResourceLocation_load_with_dyn(get_proc_address);
-            self.GetProgramResourceLocationIndex_load_with_dyn(get_proc_address);
-            self.GetProgramResourceName_load_with_dyn(get_proc_address);
-            self.GetProgramResourceiv_load_with_dyn(get_proc_address);
             self.GetProgramStageiv_load_with_dyn(get_proc_address);
             self.GetProgramiv_load_with_dyn(get_proc_address);
-            self.GetQueryBufferObjecti64v_load_with_dyn(get_proc_address);
-            self.GetQueryBufferObjectiv_load_with_dyn(get_proc_address);
-            self.GetQueryBufferObjectui64v_load_with_dyn(get_proc_address);
-            self.GetQueryBufferObjectuiv_load_with_dyn(get_proc_address);
             self.GetQueryIndexediv_load_with_dyn(get_proc_address);
             self.GetQueryObjecti64v_load_with_dyn(get_proc_address);
             {
                 self.GetQueryObjecti64vEXT_load_with_dyn(get_proc_address);
             }
             self.GetQueryObjectiv_load_with_dyn(get_proc_address);
-            {
-                self.GetQueryObjectivEXT_load_with_dyn(get_proc_address);
-            }
             self.GetQueryObjectui64v_load_with_dyn(get_proc_address);
             {
                 self.GetQueryObjectui64vEXT_load_with_dyn(get_proc_address);
             }
             self.GetQueryObjectuiv_load_with_dyn(get_proc_address);
-            {
-                self.GetQueryObjectuivEXT_load_with_dyn(get_proc_address);
-            }
             self.GetQueryiv_load_with_dyn(get_proc_address);
-            {
-                self.GetQueryivEXT_load_with_dyn(get_proc_address);
-            }
             self.GetRenderbufferParameteriv_load_with_dyn(get_proc_address);
             self.GetSamplerParameterIiv_load_with_dyn(get_proc_address);
             self.GetSamplerParameterIuiv_load_with_dyn(get_proc_address);
@@ -5255,18 +5101,7 @@ pub mod struct_commands {
             self.GetTexParameterIuiv_load_with_dyn(get_proc_address);
             self.GetTexParameterfv_load_with_dyn(get_proc_address);
             self.GetTexParameteriv_load_with_dyn(get_proc_address);
-            self.GetTextureImage_load_with_dyn(get_proc_address);
-            self.GetTextureLevelParameterfv_load_with_dyn(get_proc_address);
-            self.GetTextureLevelParameteriv_load_with_dyn(get_proc_address);
-            self.GetTextureParameterIiv_load_with_dyn(get_proc_address);
-            self.GetTextureParameterIuiv_load_with_dyn(get_proc_address);
-            self.GetTextureParameterfv_load_with_dyn(get_proc_address);
-            self.GetTextureParameteriv_load_with_dyn(get_proc_address);
-            self.GetTextureSubImage_load_with_dyn(get_proc_address);
             self.GetTransformFeedbackVarying_load_with_dyn(get_proc_address);
-            self.GetTransformFeedbacki64_v_load_with_dyn(get_proc_address);
-            self.GetTransformFeedbacki_v_load_with_dyn(get_proc_address);
-            self.GetTransformFeedbackiv_load_with_dyn(get_proc_address);
             self.GetUniformBlockIndex_load_with_dyn(get_proc_address);
             self.GetUniformIndices_load_with_dyn(get_proc_address);
             self.GetUniformLocation_load_with_dyn(get_proc_address);
@@ -5275,9 +5110,6 @@ pub mod struct_commands {
             self.GetUniformfv_load_with_dyn(get_proc_address);
             self.GetUniformiv_load_with_dyn(get_proc_address);
             self.GetUniformuiv_load_with_dyn(get_proc_address);
-            self.GetVertexArrayIndexed64iv_load_with_dyn(get_proc_address);
-            self.GetVertexArrayIndexediv_load_with_dyn(get_proc_address);
-            self.GetVertexArrayiv_load_with_dyn(get_proc_address);
             self.GetVertexAttribIiv_load_with_dyn(get_proc_address);
             self.GetVertexAttribIuiv_load_with_dyn(get_proc_address);
             self.GetVertexAttribLdv_load_with_dyn(get_proc_address);
@@ -5285,21 +5117,7 @@ pub mod struct_commands {
             self.GetVertexAttribdv_load_with_dyn(get_proc_address);
             self.GetVertexAttribfv_load_with_dyn(get_proc_address);
             self.GetVertexAttribiv_load_with_dyn(get_proc_address);
-            self.GetnCompressedTexImage_load_with_dyn(get_proc_address);
-            self.GetnTexImage_load_with_dyn(get_proc_address);
-            self.GetnUniformdv_load_with_dyn(get_proc_address);
-            self.GetnUniformfv_load_with_dyn(get_proc_address);
-            self.GetnUniformiv_load_with_dyn(get_proc_address);
-            self.GetnUniformuiv_load_with_dyn(get_proc_address);
             self.Hint_load_with_dyn(get_proc_address);
-            self.InvalidateBufferData_load_with_dyn(get_proc_address);
-            self.InvalidateBufferSubData_load_with_dyn(get_proc_address);
-            self.InvalidateFramebuffer_load_with_dyn(get_proc_address);
-            self.InvalidateNamedFramebufferData_load_with_dyn(get_proc_address);
-            self.InvalidateNamedFramebufferSubData_load_with_dyn(get_proc_address);
-            self.InvalidateSubFramebuffer_load_with_dyn(get_proc_address);
-            self.InvalidateTexImage_load_with_dyn(get_proc_address);
-            self.InvalidateTexSubImage_load_with_dyn(get_proc_address);
             self.IsBuffer_load_with_dyn(get_proc_address);
             self.IsEnabled_load_with_dyn(get_proc_address);
             {
@@ -5310,9 +5128,6 @@ pub mod struct_commands {
             self.IsProgram_load_with_dyn(get_proc_address);
             self.IsProgramPipeline_load_with_dyn(get_proc_address);
             self.IsQuery_load_with_dyn(get_proc_address);
-            {
-                self.IsQueryEXT_load_with_dyn(get_proc_address);
-            }
             self.IsRenderbuffer_load_with_dyn(get_proc_address);
             self.IsSampler_load_with_dyn(get_proc_address);
             self.IsShader_load_with_dyn(get_proc_address);
@@ -5323,52 +5138,15 @@ pub mod struct_commands {
             {
                 self.IsVertexArrayAPPLE_load_with_dyn(get_proc_address);
             }
-            {
-                self.IsVertexArrayOES_load_with_dyn(get_proc_address);
-            }
             self.LineWidth_load_with_dyn(get_proc_address);
             self.LinkProgram_load_with_dyn(get_proc_address);
             self.LogicOp_load_with_dyn(get_proc_address);
             self.MapBuffer_load_with_dyn(get_proc_address);
             self.MapBufferRange_load_with_dyn(get_proc_address);
-            self.MapNamedBuffer_load_with_dyn(get_proc_address);
-            self.MapNamedBufferRange_load_with_dyn(get_proc_address);
-            {
-                self.MaxShaderCompilerThreadsARB_load_with_dyn(get_proc_address);
-            }
-            {
-                self.MaxShaderCompilerThreadsKHR_load_with_dyn(get_proc_address);
-            }
-            self.MemoryBarrier_load_with_dyn(get_proc_address);
-            self.MemoryBarrierByRegion_load_with_dyn(get_proc_address);
             self.MinSampleShading_load_with_dyn(get_proc_address);
             self.MultiDrawArrays_load_with_dyn(get_proc_address);
-            self.MultiDrawArraysIndirect_load_with_dyn(get_proc_address);
-            self.MultiDrawArraysIndirectCount_load_with_dyn(get_proc_address);
             self.MultiDrawElements_load_with_dyn(get_proc_address);
             self.MultiDrawElementsBaseVertex_load_with_dyn(get_proc_address);
-            self.MultiDrawElementsIndirect_load_with_dyn(get_proc_address);
-            self.MultiDrawElementsIndirectCount_load_with_dyn(get_proc_address);
-            self.NamedBufferData_load_with_dyn(get_proc_address);
-            self.NamedBufferStorage_load_with_dyn(get_proc_address);
-            self.NamedBufferSubData_load_with_dyn(get_proc_address);
-            self.NamedFramebufferDrawBuffer_load_with_dyn(get_proc_address);
-            self.NamedFramebufferDrawBuffers_load_with_dyn(get_proc_address);
-            self.NamedFramebufferParameteri_load_with_dyn(get_proc_address);
-            self.NamedFramebufferReadBuffer_load_with_dyn(get_proc_address);
-            self.NamedFramebufferRenderbuffer_load_with_dyn(get_proc_address);
-            self.NamedFramebufferTexture_load_with_dyn(get_proc_address);
-            self.NamedFramebufferTextureLayer_load_with_dyn(get_proc_address);
-            self.NamedRenderbufferStorage_load_with_dyn(get_proc_address);
-            self.NamedRenderbufferStorageMultisample_load_with_dyn(get_proc_address);
-            self.ObjectLabel_load_with_dyn(get_proc_address);
-            {
-                self.ObjectLabelKHR_load_with_dyn(get_proc_address);
-            }
-            self.ObjectPtrLabel_load_with_dyn(get_proc_address);
-            {
-                self.ObjectPtrLabelKHR_load_with_dyn(get_proc_address);
-            }
             self.PatchParameterfv_load_with_dyn(get_proc_address);
             self.PatchParameteri_load_with_dyn(get_proc_address);
             self.PauseTransformFeedback_load_with_dyn(get_proc_address);
@@ -5381,12 +5159,6 @@ pub mod struct_commands {
             self.PointSize_load_with_dyn(get_proc_address);
             self.PolygonMode_load_with_dyn(get_proc_address);
             self.PolygonOffset_load_with_dyn(get_proc_address);
-            self.PolygonOffsetClamp_load_with_dyn(get_proc_address);
-            self.PopDebugGroup_load_with_dyn(get_proc_address);
-            {
-                self.PopDebugGroupKHR_load_with_dyn(get_proc_address);
-            }
-            self.PrimitiveBoundingBox_load_with_dyn(get_proc_address);
             self.PrimitiveRestartIndex_load_with_dyn(get_proc_address);
             self.ProgramBinary_load_with_dyn(get_proc_address);
             self.ProgramParameteri_load_with_dyn(get_proc_address);
@@ -5441,17 +5213,9 @@ pub mod struct_commands {
             self.ProgramUniformMatrix4x3dv_load_with_dyn(get_proc_address);
             self.ProgramUniformMatrix4x3fv_load_with_dyn(get_proc_address);
             self.ProvokingVertex_load_with_dyn(get_proc_address);
-            self.PushDebugGroup_load_with_dyn(get_proc_address);
-            {
-                self.PushDebugGroupKHR_load_with_dyn(get_proc_address);
-            }
             self.QueryCounter_load_with_dyn(get_proc_address);
-            {
-                self.QueryCounterEXT_load_with_dyn(get_proc_address);
-            }
             self.ReadBuffer_load_with_dyn(get_proc_address);
             self.ReadPixels_load_with_dyn(get_proc_address);
-            self.ReadnPixels_load_with_dyn(get_proc_address);
             self.ReleaseShaderCompiler_load_with_dyn(get_proc_address);
             self.RenderbufferStorage_load_with_dyn(get_proc_address);
             self.RenderbufferStorageMultisample_load_with_dyn(get_proc_address);
@@ -5470,8 +5234,6 @@ pub mod struct_commands {
             self.ScissorIndexedv_load_with_dyn(get_proc_address);
             self.ShaderBinary_load_with_dyn(get_proc_address);
             self.ShaderSource_load_with_dyn(get_proc_address);
-            self.ShaderStorageBlockBinding_load_with_dyn(get_proc_address);
-            self.SpecializeShader_load_with_dyn(get_proc_address);
             self.StencilFunc_load_with_dyn(get_proc_address);
             self.StencilFuncSeparate_load_with_dyn(get_proc_address);
             self.StencilMask_load_with_dyn(get_proc_address);
@@ -5479,7 +5241,6 @@ pub mod struct_commands {
             self.StencilOp_load_with_dyn(get_proc_address);
             self.StencilOpSeparate_load_with_dyn(get_proc_address);
             self.TexBuffer_load_with_dyn(get_proc_address);
-            self.TexBufferRange_load_with_dyn(get_proc_address);
             self.TexImage1D_load_with_dyn(get_proc_address);
             self.TexImage2D_load_with_dyn(get_proc_address);
             self.TexImage2DMultisample_load_with_dyn(get_proc_address);
@@ -5493,32 +5254,10 @@ pub mod struct_commands {
             self.TexParameteriv_load_with_dyn(get_proc_address);
             self.TexStorage1D_load_with_dyn(get_proc_address);
             self.TexStorage2D_load_with_dyn(get_proc_address);
-            self.TexStorage2DMultisample_load_with_dyn(get_proc_address);
             self.TexStorage3D_load_with_dyn(get_proc_address);
-            self.TexStorage3DMultisample_load_with_dyn(get_proc_address);
             self.TexSubImage1D_load_with_dyn(get_proc_address);
             self.TexSubImage2D_load_with_dyn(get_proc_address);
             self.TexSubImage3D_load_with_dyn(get_proc_address);
-            self.TextureBarrier_load_with_dyn(get_proc_address);
-            self.TextureBuffer_load_with_dyn(get_proc_address);
-            self.TextureBufferRange_load_with_dyn(get_proc_address);
-            self.TextureParameterIiv_load_with_dyn(get_proc_address);
-            self.TextureParameterIuiv_load_with_dyn(get_proc_address);
-            self.TextureParameterf_load_with_dyn(get_proc_address);
-            self.TextureParameterfv_load_with_dyn(get_proc_address);
-            self.TextureParameteri_load_with_dyn(get_proc_address);
-            self.TextureParameteriv_load_with_dyn(get_proc_address);
-            self.TextureStorage1D_load_with_dyn(get_proc_address);
-            self.TextureStorage2D_load_with_dyn(get_proc_address);
-            self.TextureStorage2DMultisample_load_with_dyn(get_proc_address);
-            self.TextureStorage3D_load_with_dyn(get_proc_address);
-            self.TextureStorage3DMultisample_load_with_dyn(get_proc_address);
-            self.TextureSubImage1D_load_with_dyn(get_proc_address);
-            self.TextureSubImage2D_load_with_dyn(get_proc_address);
-            self.TextureSubImage3D_load_with_dyn(get_proc_address);
-            self.TextureView_load_with_dyn(get_proc_address);
-            self.TransformFeedbackBufferBase_load_with_dyn(get_proc_address);
-            self.TransformFeedbackBufferRange_load_with_dyn(get_proc_address);
             self.TransformFeedbackVaryings_load_with_dyn(get_proc_address);
             self.Uniform1d_load_with_dyn(get_proc_address);
             self.Uniform1dv_load_with_dyn(get_proc_address);
@@ -5573,19 +5312,10 @@ pub mod struct_commands {
             self.UniformMatrix4x3fv_load_with_dyn(get_proc_address);
             self.UniformSubroutinesuiv_load_with_dyn(get_proc_address);
             self.UnmapBuffer_load_with_dyn(get_proc_address);
-            self.UnmapNamedBuffer_load_with_dyn(get_proc_address);
             self.UseProgram_load_with_dyn(get_proc_address);
             self.UseProgramStages_load_with_dyn(get_proc_address);
             self.ValidateProgram_load_with_dyn(get_proc_address);
             self.ValidateProgramPipeline_load_with_dyn(get_proc_address);
-            self.VertexArrayAttribBinding_load_with_dyn(get_proc_address);
-            self.VertexArrayAttribFormat_load_with_dyn(get_proc_address);
-            self.VertexArrayAttribIFormat_load_with_dyn(get_proc_address);
-            self.VertexArrayAttribLFormat_load_with_dyn(get_proc_address);
-            self.VertexArrayBindingDivisor_load_with_dyn(get_proc_address);
-            self.VertexArrayElementBuffer_load_with_dyn(get_proc_address);
-            self.VertexArrayVertexBuffer_load_with_dyn(get_proc_address);
-            self.VertexArrayVertexBuffers_load_with_dyn(get_proc_address);
             self.VertexAttrib1d_load_with_dyn(get_proc_address);
             self.VertexAttrib1dv_load_with_dyn(get_proc_address);
             self.VertexAttrib1f_load_with_dyn(get_proc_address);
@@ -5622,12 +5352,10 @@ pub mod struct_commands {
             self.VertexAttrib4ubv_load_with_dyn(get_proc_address);
             self.VertexAttrib4uiv_load_with_dyn(get_proc_address);
             self.VertexAttrib4usv_load_with_dyn(get_proc_address);
-            self.VertexAttribBinding_load_with_dyn(get_proc_address);
             self.VertexAttribDivisor_load_with_dyn(get_proc_address);
             {
                 self.VertexAttribDivisorARB_load_with_dyn(get_proc_address);
             }
-            self.VertexAttribFormat_load_with_dyn(get_proc_address);
             self.VertexAttribI1i_load_with_dyn(get_proc_address);
             self.VertexAttribI1iv_load_with_dyn(get_proc_address);
             self.VertexAttribI1ui_load_with_dyn(get_proc_address);
@@ -5648,7 +5376,6 @@ pub mod struct_commands {
             self.VertexAttribI4ui_load_with_dyn(get_proc_address);
             self.VertexAttribI4uiv_load_with_dyn(get_proc_address);
             self.VertexAttribI4usv_load_with_dyn(get_proc_address);
-            self.VertexAttribIFormat_load_with_dyn(get_proc_address);
             self.VertexAttribIPointer_load_with_dyn(get_proc_address);
             self.VertexAttribL1d_load_with_dyn(get_proc_address);
             self.VertexAttribL1dv_load_with_dyn(get_proc_address);
@@ -5658,7 +5385,6 @@ pub mod struct_commands {
             self.VertexAttribL3dv_load_with_dyn(get_proc_address);
             self.VertexAttribL4d_load_with_dyn(get_proc_address);
             self.VertexAttribL4dv_load_with_dyn(get_proc_address);
-            self.VertexAttribLFormat_load_with_dyn(get_proc_address);
             self.VertexAttribLPointer_load_with_dyn(get_proc_address);
             self.VertexAttribP1ui_load_with_dyn(get_proc_address);
             self.VertexAttribP1uiv_load_with_dyn(get_proc_address);
@@ -5669,13 +5395,13 @@ pub mod struct_commands {
             self.VertexAttribP4ui_load_with_dyn(get_proc_address);
             self.VertexAttribP4uiv_load_with_dyn(get_proc_address);
             self.VertexAttribPointer_load_with_dyn(get_proc_address);
-            self.VertexBindingDivisor_load_with_dyn(get_proc_address);
             self.Viewport_load_with_dyn(get_proc_address);
             self.ViewportArrayv_load_with_dyn(get_proc_address);
             self.ViewportIndexedf_load_with_dyn(get_proc_address);
             self.ViewportIndexedfv_load_with_dyn(get_proc_address);
             self.WaitSync_load_with_dyn(get_proc_address);
         }
+
         /// [glActiveShaderProgram](http://docs.gl/gl4/glActiveShaderProgram)(pipeline, program)
         #[cfg_attr(feature = "inline", inline)]
         #[cfg_attr(feature = "inline_always", inline(always))]
