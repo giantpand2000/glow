@@ -1,9 +1,9 @@
 use super::*;
-use crate::version::Version;
+use crate::{gl46 as native_gl, version::Version};
 use std::ffi::CStr;
 use std::ptr;
 use std::{collections::HashSet, ffi::CString, num::NonZeroU32};
-pub use crate::gl46 as native_gl;
+pub use crate::gl46 as sys;
 
 #[derive(Default)]
 struct Constants {
@@ -140,7 +140,7 @@ impl Context {
     }
 
     /// expose raw fns
-    pub fn fns(&self) -> &native_gl::GlFns {
+    pub fn sys(&self) -> &native_gl::GlFns {
         &self.raw
     }
 }
