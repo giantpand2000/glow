@@ -137,6 +137,11 @@ impl Context {
             Some(non_zero_gl_name(value))
         }
     }
+
+    /// expose raw fns
+    pub fn fns(&self) -> &native_gl::GlFns {
+        &self.raw
+    }
 }
 
 impl std::fmt::Debug for Context {
