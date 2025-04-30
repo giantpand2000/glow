@@ -1,8 +1,9 @@
 use super::*;
-use crate::{gl46 as native_gl, version::Version};
+use crate::version::Version;
 use std::ffi::CStr;
 use std::ptr;
 use std::{collections::HashSet, ffi::CString, num::NonZeroU32};
+pub use crate::gl46 as native_gl;
 
 #[derive(Default)]
 struct Constants {
