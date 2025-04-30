@@ -3,7 +3,11 @@ use crate::{gl46 as native_gl, version::Version};
 use std::ffi::CStr;
 use std::ptr;
 use std::{collections::HashSet, ffi::CString, num::NonZeroU32};
-pub use crate::gl46 as sys;
+
+/// re-export native types
+pub mod sys {
+    pub use super::native_gl::*;
+}
 
 #[derive(Default)]
 struct Constants {
